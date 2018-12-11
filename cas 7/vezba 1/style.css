@@ -1,0 +1,88 @@
+body {
+    background: #d8d8d8;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 100px auto;
+}
+
+.kocka {
+    float: left;
+    width: 180px;
+    height: 180px;
+    margin: 2px;
+    background: #fff;
+    position: relative;
+}
+
+.tocka {
+    background: #000;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.center {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
+}
+
+.top_left {
+    top: 20px;
+    left: 20px;
+}
+
+.bottom_right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.top_right {
+    top: 20px;
+    right: 20px;
+
+}
+
+.bottom_left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.top_center {
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: auto;
+}
+
+.bottom_center {
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+}
+
+.broj {
+    width: 100%;
+    line-height: 180px;
+    text-align: center;
+    margin: 0px;
+    /* opacity: 0; */
+    transform: scale(0,0);
+    transition: all 0.4s ease-in-out;
+}
+
+.kocka:hover .broj {
+    /* opacity: 1; */
+    transform: scale(1,1)
+}
+
+.kocka:hover .tocka {
+    transform: scale(0,0)
+}
